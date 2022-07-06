@@ -1,20 +1,31 @@
 body{
     font-family: 'Times New Roman', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
-    min-height: 300vh; /*Declares height of page*/
+    min-height: 210vh; /*Declares height of page*/
     display: flex;
     flex-direction: column;
 }
 
 .header {
     display: flex;
-    justify-content: center;
     padding: 20px;
+    background-color: bisque; 
+}
+.head{
+    display: flex;
+    flex: 1;
+}
+.links{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    margin: 0;
 }
 
 .body {
     background-color: yellow;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     flex: 1;
 }
@@ -35,8 +46,23 @@ body{
     justify-content: center;
 }
 
-.container{
+.container1{
+    display: flex;
+    justify-content: flex-end;
     flex: 1; /*I need to place this here so that i can measure box correctly*/
+}
+
+.container2{
+    display: flex;
+    flex: 2; /*I need to place this here so that i can measure box correctly*/
+}
+.box1{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 50%;
 }
 
 /* Experiment */
