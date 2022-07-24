@@ -5,6 +5,14 @@ body{
     display: flex;
     flex-direction: column;
 }
+button{
+    /* display: flex;
+    justify-content: flex-start; */
+    padding: 10 15 10 15;
+    background-color: cornflowerblue;
+    border-radius: 0;
+}
+
 
 .header {
     display: flex;
@@ -43,18 +51,24 @@ body{
     display: flex;
     justify-content: flex-end;
     flex: 1; /*I need to place this here so that i can measure box correctly*/
+    padding-right: 100px;
 }
 
 .container2{
     display: flex;
+    align-items: center;
     flex: 1; /*I need to place this here so that i can measure box correctly*/
+    margin: -130px 0px -100px 90px;
 }
 .box1{
     display: flex;
     flex: 1;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 25px;
+    flex-flow: column;
+}
+.exmp{
+    align-items: center; /* put this in here so that I wouldn't have to make another box class */
 }
 
 .container3{
@@ -94,6 +108,16 @@ body{
     flex: 0;
     justify-content: end;
 }
+
+/* Styles for font */
+
+.bold {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
 /* Experiment */
 /* html, body {
     width: 100%;
@@ -102,7 +126,7 @@ body{
     padding: 0;
     background-color: green;
 }
-.container {
+#container {
     width: inherit;
     height: inherit;
     margin: 0;
