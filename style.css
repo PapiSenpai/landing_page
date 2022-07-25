@@ -12,7 +12,18 @@ button{
     background-color: cornflowerblue;
     border-radius: 0;
 }
-
+img{
+    height: auto;
+    width: 195px;
+}
+.img1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    height: 190px;
+    width: 340px;
+}
 
 .header {
     display: flex;
@@ -31,7 +42,7 @@ button{
 }
 
 .body {
-    background-color: yellow;
+    background-color: #1F2937;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -75,21 +86,38 @@ button{
     display: flex;
     flex-direction: column;
     flex: 1; /*I need to place this here so that i can measure box correctly*/
+    background-color: white;
 }
 .box2{
     display: flex;
     flex: 1;
-    background-color: greenyellow;
     justify-content: center;
     align-items: center;
+    margin: -45px;
 }
 .box3 {
     display: flex;
-    flex: 5;
-    background-color: aqua;
+    flex: 1;
     justify-content: center;
-    align-items: center;
     padding: 20px;
+}
+.square{
+    border: 3px solid blue;
+    height: 100px;
+    width: 100px;
+    margin: -20px 18px -91px;
+    border-radius: 10px;
+}
+.textbox{
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    margin: 0px 177px 0px;
+}
+.text{
+    height: 60px;
+    width: 94px;
+    margin: -32px 0px -56px;
 }
 
 .container4{
@@ -112,9 +140,14 @@ button{
 /* Styles for font */
 
 .bold {
-    text-align: center;
     font-size: 50px;
     font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.bold2{
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
 }
 
 
