@@ -1,20 +1,22 @@
 body{
     font-family: 'Times New Roman', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
-    min-height: 150vh; /*Declares height of page*/
+    min-height: 185vh; /*Declares height of page*/
     display: flex;
     flex-direction: column;
 }
 button{
     /* display: flex;
     justify-content: flex-start; */
-    padding: 10 15 10 15;
-    background-color: cornflowerblue;
+    background-color: #3882F6;
     border-radius: 0;
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
 }
 img{
     height: auto;
-    width: 195px;
+    width: 450px;
 }
 .img1{
     display: flex;
@@ -23,6 +25,10 @@ img{
     background-color: lightgray;
     height: 190px;
     width: 340px;
+}
+p{
+    margin: 0px;
+   /* padding: 15px 344px 23px 0px;*/
 }
 
 .header {
@@ -33,6 +39,7 @@ img{
 .head{
     display: flex;
     flex: 1;
+    justify-content: center;
 }
 .links{
     display: flex;
@@ -52,8 +59,8 @@ img{
 .footer {
     display: flex;
     justify-content: center;
-    align-self: center;
-    background-color: beige;
+    background-color: #1F2937;
+    color: white;
     flex: 0;
     padding: 20px;
 }
@@ -69,13 +76,16 @@ img{
     display: flex;
     align-items: center;
     flex: 1; /*I need to place this here so that i can measure box correctly*/
-    margin: -130px 0px -100px 90px;
+    /* margin: -130px 0px -100px 110px; */
+    padding: 90px;
+    text-align: left;
+    justify-content: center;
 }
 .box1{
     display: flex;
-    flex: 1;
+    /* flex: 1; */
     align-items: flex-start;
-    padding: 25px;
+    /* padding: 10px 0px 0px 91px; */
     flex-flow: column;
 }
 .exmp{
@@ -100,24 +110,23 @@ img{
     flex: 1;
     justify-content: center;
     padding: 20px;
+    flex-wrap: wrap;
 }
 .square{
+    display: flex;
     border: 3px solid blue;
     height: 100px;
     width: 100px;
     margin: -20px 18px -91px;
     border-radius: 10px;
+    /* flex-wrap: wrap; */
 }
-.textbox{
-    display: flex;
-    flex: 1;
-    justify-content: space-around;
-    margin: 0px 177px 0px;
-}
+
 .text{
+    align-self: flex-end;
     height: 60px;
     width: 94px;
-    margin: -32px 0px -56px;
+    margin: 0px 18px -75px;
 }
 
 .container4{
@@ -125,17 +134,38 @@ img{
     flex: 1;
     justify-content: center;
     align-items: center;
+    background-color: lightgray;
 }
 .box4{
-    display: flex;
-    flex: 0;
-    flex-direction: column;
+     font-style: italic;
+     font-size: 17px;
+     margin: -71px;
 }
 .box5{
     display: flex;
     flex: 0;
     justify-content: end;
+    font-weight: bold;
+    font-style: normal;
 }
+
+.container5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    background-color: white;
+}
+.container6{  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    width: 178vh;
+    background-color: #3882F6;
+    border-radius: 10px;
+}
+
 
 /* Styles for font */
 
@@ -149,7 +179,22 @@ img{
     font-weight: bold;
     color: black;
 }
+.bold3{
+    font-size: 18px;
+    color: white;
+}
 
+.container7{
+    display: flex;
+     justify-content: center;
+     padding: 0px 0 5px;
+
+}
+.box6{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
 
 /* Experiment */
 /* html, body {
