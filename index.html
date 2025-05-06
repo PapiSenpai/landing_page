@@ -6,21 +6,27 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="style.css" rel="stylesheet"> 
-        <title>My Portfolio</title>
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <title>Tech Portfolio</title>
+        <!-- Updated FontAwesome to a more current CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </head>
 
     <body>
         <div class="header">
             <div class="head">
-                <h1 class="logo">My Portfolio</h1>
+                <h1 class="logo">DevPortfolio</h1>
+            </div>
+            <div class="hamburger" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
             <div class="navigation">
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about"><i class="fas fa-user-alt"></i> About</a></li>
+                    <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+                    <li><a href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -29,37 +35,58 @@
             <section id="about" class="about-section">
                 <div class="container2">
                     <div class="box1">
-                        <h2 class="section-title">About Me</h2>
+                        <div class="section-badge">Full Stack Developer</div>
+                        <h2 class="section-title">Hello, I'm <span class="highlight-text">a Developer</span></h2>
                         <p class="bio">
-                            Welcome to my portfolio! I am a passionate developer currently pursuing a degree in Computer Science 
-                            at California State University San Bernardino. With a strong foundation in programming and problem-solving,
-                            I'm dedicated to creating efficient and innovative solutions. When I'm not coding, I'm active in 
-                            various campus organizations including the CICO and CSE clubs.
+                            Welcome to my tech portfolio! I am a passionate software developer currently pursuing a degree in Computer Science 
+                            at California State University San Bernardino. With a strong foundation in both frontend and backend technologies,
+                            I'm dedicated to creating efficient, scalable, and innovative solutions to complex problems. I specialize in 
+                            building responsive web applications and exploring emerging technologies.
                         </p>
-                        <a href="#contact" class="btn primary-btn">Contact Me</a>
+                        <div class="tech-tags">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <a href="#contact" class="btn primary-btn"><i class="fas fa-paper-plane"></i> Contact Me</a>
                     </div>
                     <div class="img1 profile-img-container">
                         <img src="./images/white_kitten.jpg" alt="Profile Picture" class="profile-img">
+                        <div class="code-decoration">
+                            <pre><code>const developer = {
+  code: ["JS", "Python", "Java"],
+  tools: ["React", "Node", "Docker"],
+  challenges: "Always learning"
+}</code></pre>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <section id="projects" class="projects-section">
                 <div class="section-container">
-                    <h2 class="section-title centered">My Projects</h2>
-                    <p class="section-description">Here are some of the projects I've worked on</p>
+                    <div class="section-badge">What I've Built</div>
+                    <h2 class="section-title centered">My <span class="highlight-text">Projects</span></h2>
+                    <p class="section-description">A collection of my technical projects and applications</p>
                     
                     <div class="projects-grid">
                         <div class="project-card">
                             <div class="project-img">
                                 <img src="./images/white_kitten.jpg" alt="Project 1">
+                                <div class="project-category">Frontend</div>
                             </div>
                             <div class="project-info">
-                                <h3>Project One</h3>
-                                <p>A brief description of your first project and the technologies used.</p>
+                                <h3>React Dashboard</h3>
+                                <p>An interactive analytics dashboard built with React, Chart.js, and a RESTful API backend for real-time data visualization.</p>
+                                <div class="project-tech">
+                                    <span class="tech-badge">React</span>
+                                    <span class="tech-badge">Chart.js</span>
+                                    <span class="tech-badge">API</span>
+                                </div>
                                 <div class="project-links">
-                                    <a href="#" class="btn">View Project</a>
-                                    <a href="#" class="btn secondary-btn">GitHub</a>
+                                    <a href="#" class="btn"><i class="fas fa-eye"></i> Demo</a>
+                                    <a href="#" class="btn secondary-btn"><i class="fab fa-github"></i> GitHub</a>
                                 </div>
                             </div>
                         </div>
@@ -67,13 +94,19 @@
                         <div class="project-card">
                             <div class="project-img">
                                 <img src="./images/white_kitten.jpg" alt="Project 2">
+                                <div class="project-category">Full Stack</div>
                             </div>
                             <div class="project-info">
-                                <h3>Project Two</h3>
-                                <p>A brief description of your second project and the technologies used.</p>
+                                <h3>E-Commerce Platform</h3>
+                                <p>A full-stack e-commerce solution with user authentication, product management, shopping cart, and payment processing.</p>
+                                <div class="project-tech">
+                                    <span class="tech-badge">MongoDB</span>
+                                    <span class="tech-badge">Express</span>
+                                    <span class="tech-badge">Node.js</span>
+                                </div>
                                 <div class="project-links">
-                                    <a href="#" class="btn">View Project</a>
-                                    <a href="#" class="btn secondary-btn">GitHub</a>
+                                    <a href="#" class="btn"><i class="fas fa-eye"></i> Demo</a>
+                                    <a href="#" class="btn secondary-btn"><i class="fab fa-github"></i> GitHub</a>
                                 </div>
                             </div>
                         </div>
@@ -81,13 +114,19 @@
                         <div class="project-card">
                             <div class="project-img">
                                 <img src="./images/white_kitten.jpg" alt="Project 3">
+                                <div class="project-category">Mobile</div>
                             </div>
                             <div class="project-info">
-                                <h3>Project Three</h3>
-                                <p>A brief description of your third project and the technologies used.</p>
+                                <h3>AI Task Manager</h3>
+                                <p>A mobile application that uses machine learning to prioritize and organize tasks based on user behavior and preferences.</p>
+                                <div class="project-tech">
+                                    <span class="tech-badge">React Native</span>
+                                    <span class="tech-badge">Firebase</span>
+                                    <span class="tech-badge">TensorFlow</span>
+                                </div>
                                 <div class="project-links">
-                                    <a href="#" class="btn">View Project</a>
-                                    <a href="#" class="btn secondary-btn">GitHub</a>
+                                    <a href="#" class="btn"><i class="fas fa-eye"></i> Demo</a>
+                                    <a href="#" class="btn secondary-btn"><i class="fab fa-github"></i> GitHub</a>
                                 </div>
                             </div>
                         </div>
@@ -182,7 +221,32 @@
         </div>
 
         <div class="footer">
-            <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3 class="logo">DevPortfolio</h3>
+                    <p>Building the future, one line of code at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> your.email@example.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> San Bernardino, CA</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DevPortfolio. All Rights Reserved.</p>
+            </div>
         </div>
+        
+        <!-- Added script.js -->
+        <script src="script.js"></script>
     </body>
 </html>
